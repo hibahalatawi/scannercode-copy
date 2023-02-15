@@ -9,15 +9,12 @@ import SwiftUI
 import AuthenticationServices
 struct ContentView: View {
     
-   
     @State private var showScannerSheet = false
     @State private var enterAlertPresent = false
-    
     @State private var nameDoucment = ""
     @State private var search = ""
     @State private var images:[ScanData] = []
-    
-   // @State private var doucment: ScanData?
+    @State private var doucment: ScanData?
     
     var body: some View {
         
@@ -105,7 +102,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        //homepage()
+       
       
     }
 }
